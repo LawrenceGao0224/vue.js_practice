@@ -37,8 +37,20 @@ var app = new Vue({
   },
   computed:{
     Japan: function(){
-      return this.NT * 0.2601
-    } 
+      return this.NT / 0.2601
+    },
+    USA: function(){
+      return this.NT / 28.185
+    },
+    Australia: function(){
+      return this.NT / 22.01
+    },
+    China: function(){
+      return this.NT / 4.402
+    },
+    Korea: function(){
+      return this.NT / 0.0269
+    }  
   }
 
 })
