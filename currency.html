@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/vivelasoru/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'app'>
+        <h2>匯率計算</h2>
+        請輸入台幣：<input type='text' v-model='NT'>
+        <li>美金：{{USA}}</li>
+        <li>日幣：{{Japan}}</li>
+        <li>澳幣：{{Australia}}</li>
+        <li>人民幣：{{China}}</li>
+        <li>韓元：{{Korea}}</li>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    </div>
+<script id="jsbin-javascript">
+var app = new Vue({
+	el:'#app',
+  data:{
+  	message : 'Hello world',
+    NT : 0,
+    
+  },
+  computed:{
+    Japan: function(){
+      return this.NT * 0.2601
+    } 
+  }
+
+})
+
+  
+
+</script>
+</body>
+</html>
